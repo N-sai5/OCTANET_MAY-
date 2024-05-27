@@ -1,0 +1,19 @@
+function talk(){
+    var know = {
+    "Who are you" : "Hello, NITHIN here ",
+    "How are you" : "Good :)",
+    "What is your Linkedin profile name" : "Nithinsai pydivada.",
+    "Which college you are" : "Vignan institute information technology",
+    "ok" : "Thank You So Much ",
+    "Which department you are" : "ECE department",
+    "What tools you used to create chatbox" : "HTML,CSS,JAVASCRIPT",
+    "Bye" : "Okay! Will meet soon.."
+    };
+    var user = document.getElementById('userBox').value;
+    document.getElementById('chatLog').innerHTML = user + "<br>";
+    if (user in know) {
+    document.getElementById('chatLog').innerHTML = know[user] + "<br>";
+    }else{
+    document.getElementById('chatLog').innerHTML = "Sorry,I didn't understand <br>";
+    }
+    }
